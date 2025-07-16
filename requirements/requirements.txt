@@ -9,5 +9,5 @@ feature-engine
 joblib
 xgboost
 gensim
-rdkit-pypi
+rdkit
 mol2vec @ git+https://github.com/samoturk/mol2vec
