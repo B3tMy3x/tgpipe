@@ -140,7 +140,10 @@ class SmilesWrapper(BaseEstimator, TransformerMixin):
             X[smiles] = canon_list
 
             # remove double SMILES and get average values of target param
-            X = X.groupby(by=smiles).mean().reset_index()
+            X_numeric = X.select_dtypes(include='number')  # оставить только числовые колонки
+            X = pd.concat([X[smiles], X_numeric], axis=1)   # сохранить колонку с SMILES
+            X = X.groupby(by=smiles).mean(numeric_only=True).reset_index()
+
 
             # scale Temp param to Kelvin
             if self.param_scaler is True:

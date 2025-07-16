@@ -11,3 +11,4 @@ xgboost
 gensim
 rdkit
 mol2vec @ git+https://github.com/samoturk/mol2vec
+gensim==3.8.3
