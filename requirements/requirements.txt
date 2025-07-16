@@ -1,5 +1,5 @@
 setuptools
-numpy>=1.22.0
+numpy==1.22.0
 pandas
 pydantic>=1.10.5,<2.0
 scikit-learn
