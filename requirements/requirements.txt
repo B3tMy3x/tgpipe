@@ -1,3 +1,4 @@
+setuptools
 numpy>=1.20.0,<1.21.0
 pandas>=1.2.0,<1.3.0
 pydantic>=1.10.5,<2.0
@@ -10,4 +11,3 @@ xgboost<=1.4.0
 gensim==3.8.3
 rdkit-pypi
 mol2vec @ git+https://github.com/samoturk/mol2vec
-setuptools<60.0.0
